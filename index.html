@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>University Website Clone</title>
   </head>
   <body>
     <section>
@@ -16,9 +16,9 @@
       </div>
     </section>
     <section
-      class="grid grid-cols-1 border py-10 px-12 grid-rows-3 md: grid-cols-2 grid-rows-2"
+      class="grid grid-cols-1 border py-10 px-12 grid-rows-3 lg: grid-cols-2 gap-8"
     >
-      <h1 class="text-yellow-600 text-6xl">Study</h1>
+      <h1 class="text-[#A18A4D] text-6xl">Study</h1>
       <h2 class="text-black-500 col-start-1 text-3xl font-bold">
         Your future is here!
       </h2>
@@ -34,35 +34,60 @@
     <div
       class="grid grid-cols-1 py-10 px-12 grid-rows-8 md: grid-cols-2 grid-rows-4"
     >
-      <div class="row-start-1 col-start-1">
-        <h3 class="text-2xl">Which course are you looking for?</h3>
+      <div class="row-start-1 col-start-1 md:row-start-1 col-start-1 mb--10">
+        <h3 class="text-2xl font-bold">Which course are you looking for?</h3>
       </div>
-      <div class="col-start-1">
-        <div class="md: row-start-2">
+      <div class="col-start-1 col-start-1 md:col-start-1">
+        <div class="grid mb-4 row-start-2 md: row-start-2">
           <button
-            class="bg-black-600 text-black-500 px-6 py-2 border border-black"
+            class="bg-black-600 text-black-500 px-60 py-2 border border-black"
           >
             All
           </button>
         </div>
-        <div class="row-start-3">
-          <button
-            class="bg-black-600 text-gray-300 px-6 py-2 border border-black"
-          >
+        <div class="grid px-70 py-1 md:row-start-3">
+          <button class="bg-black-600 text-gray-300 mb-4 border border-black">
             Please enter keywords here...
           </button>
         </div>
-        <div class="row-start-4">
-          <button class="text-white bg-yellow-600 px-6 py-2">Search</button>
+        <div class="grid md: row-start-4">
+          <button class="text-white bg-[#A18A4D] px-6 py-2 px-60 py-2">
+            Search
+          </button>
         </div>
       </div>
-      <div class="col-start-2 row-start-2">
-        <h4 class="font-bold">Courses from A to Z:</h4>
-        <a href="#">Bachelor's and Integrated Master’s Degrees</a>
-        <a href="#">Master’s Degrees</a>
-        <a href="#">Doctorates</a>
+      <div
+        class="grid col-start-1 row-start-3:row-start-2 col-start-2 gap-2 mx-20"
+      >
+        <h4 class="font-bold text-3xl row-start-5 md: row-start-2">
+          Courses from A to Z:
+        </h4>
+        <div>
+          <a href="#" class="underline text-2xl"
+            >Bachelor's and Integrated Master’s Degrees</a
+          >
+        </div>
+        <div>
+          <a href="#" class="underline text-2xl">Master’s Degrees</a>
+        </div>
+        <div>
+          <a href="#" class="underline text-2xl">Doctorates</a>
+        </div>
       </div>
     </div>
-    <section></section>
+    <section class="container mx-auto py-16 px-6">
+      <h4 class="text-[#A18A4D] text-2xl">News</h4>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="">
+          <img src="./images/jose-varejao-pro-reitor-uporto.jpeg" />
+        </div>
+        <div class="">
+          <img src="./images/Dia-da-FEUP.jpeg" />
+        </div>
+        <div class="">
+          <img src="./images/Noticia-UP-18.jpeg" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
